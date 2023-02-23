@@ -1,27 +1,23 @@
 #include "main.h"
 
 /**
- * print_diagonal - printing lines diagonal
- * @n: input variable
- *
- * Return: void
+ * more_numbers - nmbr fct
+ * Bwave ICT file
+ * Return: no return
  */
 
-
-void print_diagonal(int n)
+void more_numbers(void)
 {
-	int i, j;
 
-	if (n <= 0)
-		_putchar('\n');
-	for (i = 0; i < n; i++)
+int i, j;
+	for (i = 1; i <= 10; i++)
 	{
-		for (j = 0; j < i; j++)
+		for (j = 0; j <= 14; j++)
 		{
-			_putchar(' ');
+			if (j >= 10)
+			_putchar('1');
+			_putchar(j % 10 + '0');
 		}
-		_putchar('\\');
-		_putchar('\n');
-	}
-
+			_putchar('\n');
+		}
 }
